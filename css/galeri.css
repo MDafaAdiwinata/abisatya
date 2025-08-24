@@ -1,0 +1,114 @@
+ :root {
+  scroll-padding-top: 80px !important;
+  /* Light Mode Colors (Default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #ededed;
+  --text-primary: #000000;
+  --text-secondary: #202020;
+
+  --navbar-bg: #090d2b;
+  --card-bg-kepsek: #ffffff;
+  --card-bg-guru: #ffffff;
+  --border-bg-color: #f0f0f0;
+
+  --bg-circle-kepsek: #ffffff;
+  --card-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
+
+  --bg-modal-galeri: rgba(255, 255, 255, 0.9);
+  --text-modal-galeri: #151515;
+}
+
+[data-theme="dark"] {
+  /* Dark Mode Colors */
+  --bg-primary: #000000;
+  --bg-secondary: #151515;
+  --text-primary: #f1f1f1;
+  --text-secondary: #dadada;
+
+  --navbar-bg: rgba(17, 17, 17, 0.8);
+  --card-bg-kepsek: #000000;
+  --card-bg-guru: #1c1c1c;
+  --border-bg-color: #1a1a1a;
+
+  --bg-circle-kepsek: #202020;
+  --card-shadow: rgba(80, 100, 255, 0.15) 0px 8px 16px;
+
+  --bg-modal-galeri: rgba(20, 20, 20, 0.95);
+  --text-modal-galeri: #ececec;
+}
+
+* {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar Style Start */
+
+.bg-nav {
+  background-color: var(--navbar-bg);
+  transition: all ease 0.3s;
+}
+
+.navbar-scroll {
+  background-color: var(--navbar-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all ease 0.8s !important;
+}
+
+/* Navbar Style End */
+
+/* Galeri Sectioon Style Start */
+
+#galeri {
+  background-color: var(--bg-primary);
+  padding: 8rem 0 !important;
+}
+
+.nav-tittle-galery {
+  font-family: "Bonheur Royale", Arial, Helvetica, sans-serif !important;
+}
+
+.head-profil-galeri {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] select,
+[data-theme="dark"] select option,
+[data-theme="dark"] .form-select,
+[data-theme="dark"] .form-select option {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+.galeri {
+  box-shadow: var(--card-shadow);
+  transition: all ease 0.3s;
+}
+
+.galeri:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.modal-galeri {
+  background-color: var(--bg-modal-galeri);
+  color: var(--text-modal-galeri);
+}
+
+/* Galeri Sectioon Style End */
+
+@media (max-width: 768px) {
+  .head-profil-galeri {
+    font-size: 2rem;
+  }
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+  .head-profil-galeri {
+    font-size: 1.5rem;
+  }
+}
